@@ -2,8 +2,7 @@
 
 # 🗂️ Client Management System
 
-A full-stack **Client Document & Relationship Management System** built with **React.js** (frontend) and **Spring Boot** (backend), backed by a **MySQL** database.
-<br><br>
+A full-stack **Client Document & Relationship Management System** built with **React.js** (frontend) and **Spring Boot** (backend), backed by a **MySQL** database. <br><br>
 <img width="947" height="412" alt="Screenshot 2026-05-09 124322" src="https://github.com/user-attachments/assets/52c5939c-ad59-40af-bdab-7890dba29fbe" /><br>
 <img width="955" height="415" alt="Screenshot 2026-05-09 124310" src="https://github.com/user-attachments/assets/3ca0625c-2f8b-4a02-9db3-d8b77871467f" />
 
