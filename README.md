@@ -182,9 +182,3 @@ If you change the backend port, update the API base URL in the frontend source f
 | `react-d3-tree` | Interactive Family Tree visualization |
 
 ---
-
-
-
-## 👨‍💻 Author
-
-> Built with ❤️ — Feel free to reach out for questions or contributions!
