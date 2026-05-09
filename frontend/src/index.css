@@ -32,6 +32,8 @@
   --stroke-node: rgba(255, 255, 255, 0.08);
   --sidebar-text: #94a3b8;
   --sidebar-group-title: rgba(148, 163, 184, 0.45);
+  --tree-edge-color: #94a3b8;
+  --bg-dropdown: #0d1426;
 }
 
 :root[data-theme="light"] {
@@ -63,6 +65,8 @@
   --stroke-node: rgba(15, 23, 42, 0.08);
   --sidebar-text: #334155;
   --sidebar-group-title: #64748b;
+  --tree-edge-color: #334155;
+  --bg-dropdown: #ffffff;
 }
 
 body {

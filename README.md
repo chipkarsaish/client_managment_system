@@ -66,11 +66,11 @@ Make sure you have the following installed before setting up the project:
 
 ## 🚀 Getting Started (Clone & Run)
 
-### Step 1 — Clone the Repository
+### Step 1 — Clone the Repository into your system
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/client-management-system.git
-cd client-management-system
+git clone https://github.com/chipkarsaish/client_managment_system.git
+cd client_managment_system
 ```
 
 ---

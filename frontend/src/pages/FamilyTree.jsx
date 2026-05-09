@@ -293,7 +293,7 @@ function FamilyTree() {
                                     {/* Edges */}
                                     {svgData.edges.map((e, i) => (
                                         <line key={i} x1={e.x1} y1={e.y1} x2={e.x2} y2={e.y2}
-                                            stroke={e.couple ? '#f472b6' : '#cbd5e1'}
+                                            stroke={e.couple ? '#f472b6' : 'var(--tree-edge-color)'}
                                             strokeWidth={e.couple ? 2.5 : 1.5}
                                             strokeDasharray={e.couple ? '6,3' : undefined} />
                                     ))}
@@ -311,12 +311,12 @@ function FamilyTree() {
 
                         {/* Legend */}
                         {svgData && (
-                            <div style={{ position: 'absolute', bottom: '16px', left: '16px', backgroundColor: 'rgba(13, 20, 38, 0.85)', backdropFilter: 'blur(10px)', padding: '10px 14px', borderRadius: '10px', boxShadow: '0 4px 12px rgba(0,0,0,0.35)', border: '1px solid var(--border)', fontSize: '0.78rem' }}>
+                            <div style={{ position: 'absolute', bottom: '16px', left: '16px', backgroundColor: 'var(--bg-surface)', backdropFilter: 'blur(10px)', padding: '10px 14px', borderRadius: '10px', boxShadow: 'var(--shadow-md)', border: '1px solid var(--border)', fontSize: '0.78rem' }}>
                                 <div style={{ fontWeight: 700, marginBottom: '6px', color: 'var(--text-secondary)', textTransform: 'uppercase', fontSize: '0.68rem', letterSpacing: '0.05em' }}>Legend</div>
                                 {[
                                     { color: '#f59e0b', label: '★ Selected Person' },
                                     { color: '#f472b6', label: '— — Couple Link' },
-                                    { color: '#cbd5e1', label: '—— Parent-Child' },
+                                    { color: 'var(--tree-edge-color)', label: '—— Parent-Child' },
                                 ].map(({ color, label }) => (
                                     <div key={label} style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
                                         <div style={{ width: '12px', height: '3px', backgroundColor: color, borderRadius: '2px' }} />
