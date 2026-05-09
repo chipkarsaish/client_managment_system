@@ -182,3 +182,53 @@ If you change the backend port, update the API base URL in the frontend source f
 | `react-d3-tree` | Interactive Family Tree visualization |
 
 ---
+## 📡 Backend API Reference
+
+Base URL: `http://localhost:8080`
+
+---
+
+### 👤 Person APIs — `/api/persons`
+
+| Method | Endpoint | Function |
+|--------|----------|----------|
+| `GET` | `/api/persons` | Get all persons/clients |
+| `POST` | `/api/persons` | Create / save a new person |
+| `GET` | `/api/persons/{id}` | Get a specific person by ID |
+| `DELETE` | `/api/persons/{id}` | Delete a person by ID |
+
+---
+
+### 📄 Document APIs — `/api/documents`
+
+| Method | Endpoint | Function |
+|--------|----------|----------|
+| `POST` | `/api/documents/upload` | Upload a document for a person (multipart: `file`, `personId`, `documentType`) |
+| `GET` | `/api/documents/person/{personId}` | Get all documents belonging to a person |
+| `DELETE` | `/api/documents/{id}` | Delete a document by ID |
+| `PUT` | `/api/documents/replace/{id}` | Replace/update an existing document file |
+| `GET` | `/api/documents/download/{id}` | Download a document file by ID |
+
+---
+
+### 👨‍👩‍👧 Family Relation APIs — `/api/family`
+
+| Method | Endpoint | Function |
+|--------|----------|----------|
+| `GET` | `/api/family` | Get all family relations |
+| `POST` | `/api/family` | Create / save a new family relation |
+| `DELETE` | `/api/family/{id}` | Delete a family relation by ID |
+
+---
+
+### 📍 Location APIs — `/api/locations`
+
+| Method | Endpoint | Function |
+|--------|----------|----------|
+| `GET` | `/api/locations` | Get all locations |
+| `POST` | `/api/locations` | Create / save a new location |
+| `DELETE` | `/api/locations/{id}` | Delete a location by ID (returns `409 CONFLICT` if location is linked to existing clients) |
+
+---
+
+**Total: 13 APIs** across 4 controllers — `PersonController`, `DocumentController`, `FamilyRelationController`, and `LocationController`.
