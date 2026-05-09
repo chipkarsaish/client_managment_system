@@ -179,21 +179,7 @@ If you change the backend port, update the API base URL in the frontend source f
 
 ---
 
-## 🤝 Contributing
 
-1. Fork the repository
-2. Create a new branch: `git checkout -b feature/your-feature-name`
-3. Make your changes and commit: `git commit -m "Add your feature"`
-4. Push to your branch: `git push origin feature/your-feature-name`
-5. Open a **Pull Request**
-
----
-
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
----
 
 ## 👨‍💻 Author
 
